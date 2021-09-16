@@ -1,2 +1,2 @@
-# WDD230-Portfolio
-This is a portfolio of all my work in WDD23O: Web Frontend Development 2
+# WDD330-Portfolio
+This is a portfolio of all my work in WDD33O: Web Frontend Development 2
