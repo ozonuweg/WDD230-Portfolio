@@ -48,6 +48,10 @@ footer {
     font-size: 0.8rem;
 }
 
+footer.week1-footer {
+    font-size: 1.2rem;
+}
+
 li {
     padding-left: 1rem;
 }
