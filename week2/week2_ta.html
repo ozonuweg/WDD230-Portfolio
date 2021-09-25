@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Week 2 Team Activity</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 2 Team Assignment</h1>
+    </header>
+
+    <main>
+        <label for="userIn">#1</label>
+        <input type="text" id="userIn">
+        <button onclick="displayInput()">Enter</button>
+        <div id="output"></div> 
+        <br>
+        <br>
+
+        <label for="">#2</label>
+        <input type="text" id="userIn3">
+        <button onclick="SeqAdd()">=</button>
+        <div id="out3"></div>
+        <br>
+        <br>
+
+        <label for="">#3</label>
+        <input type="text" id="userIn1">
+        <input type="text" id="userIn2">
+        <button onclick="addMachine()" id="add">+</button>
+        <button onclick="subMachine()" id="sub">-</button>
+        <button onclick="multiMachine()" id="multi">*</button>
+        <button onclick="divMachine()" id="div">/</button>
+        <div id="addMachineOut"></div>
+    </main>
+
+    <footer class="week2-footer">
+        Click <a href="./index.html">here</a> to go back to Week 2 Notes.
+    </footer>
+
+    <script>
+        function displayInput(){
+            let input = document.getElementById('userIn').value;
+            
+            document.getElementById('output').innerHTML = input;
+        }
+
+        function SeqAdd() {
+            let inThree = document.getElementById('userIn3').value;
+            let total = 0;
+            for(let i = 0; i <= inThree; i++) {
+                total = add(i, total);
+                console.log('Total = ' + total);
+                console.log('i = ' + i);
+            }
+
+            document.getElementById('out3').innerHTML = total;
+        }
+
+        function parse(input) {
+            return parseInt(document.getElementById(input).value);
+
+        }
+
+        function calc(a, b, op) {
+            return op(a, b);
+        }
+
+        function add(a,b) {
+            return a + b;
+        }
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        function multi(a, b) {
+            return a * b;
+        }
+
+        function div(a, b) {
+            return a / b;
+        }
+
+        function addMachine() {
+            let input1 = parse('userIn1');
+            let input2 = parse('userIn2');
+            let answer = calc(input1, input2, add);
+
+            document.getElementById('addMachineOut').innerHTML = answer;
+        }
+
+        function subMachine() {
+            let input1 = parse('userIn1');
+            let input2 = parse('userIn2');
+            let answer = calc(input1, input2, sub);
+
+            document.getElementById('addMachineOut').innerHTML = answer;
+        }
+
+        function multiMachine() {
+            let input1 = parse('userIn1');
+            let input2 = parse('userIn2');
+            let answer = calc(input1, input2, multi);
+
+            document.getElementById('addMachineOut').innerHTML = answer;
+        }
+        
+        function divMachine() {
+            let input1 = parse('userIn1');
+            let input2 = parse('userIn2');
+            let answer = calc(input1, input2, div);
+
+            document.getElementById('addMachineOut').innerHTML = answer;
+        }
+    </script>
+</body>
+</html>

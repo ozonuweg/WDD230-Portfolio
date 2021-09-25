@@ -72,3 +72,11 @@ a:visited {
 a:hover {
     color: blue;
 }
+
+code {
+    font-size: 12px;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}

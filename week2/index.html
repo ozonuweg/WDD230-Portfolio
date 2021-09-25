@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 330 - Week 2 Notes">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Week 2 Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 2</h1>
+    </header>  
+
+    <main>
+        <h2>Chapter 2: Programming Basics</h2>
+        <p>“Well-commented code is the hallmark of a ninja programmer”. Comments makes its easier for someone to read and understand your code. 
+            A block is a series of statements that are collected together inside curly braces. The six primitive datatype in JavaScript include: 
+            String, Symbol, Number, Boolean, Undefined, and Null. All non-primitive data types return a type of 'object'. Constant and variable 
+            names can start with any upper or lower-case letter, an underscore, _ , or dollar character, $ . They can also contain numbers, but 
+            cannot start with them.  NaN is an error value that is short for "Not a Number". It is used when an operation is attempted and the 
+            result isn’t numerical, like if you try to multiply a string by a number.
+        </p>
+        Click <a href="https://codepen.io/ozonuweg/pen/abwRXBY " target=”_blank”>here</a> to view the codepen test for Chapter 2.<br><br>
+
+
+        <h2>Chapter 3: Arrays, Logic, and Loops</h2>
+        <p>
+            Each item in an array can be treated like a variable. You can change the value using the assignment operator =. An array can contain a 
+            variety of different data types. Even when an array’s value is deleted, the array still has the same number of elements, and the position 
+            can still be referenced as an index, but it will just return undefined. The length property for an array is mutable, meaning you can manually 
+            change it. The concat() method can be used to merge an array with one or more arrays. The join() method can be used to turn the array into a 
+            string that comprises all the items in the array, separated by commas. The switch operator can be used to make your code easier to follow when 
+            there are lots of conditions to test. 
+        </p>
+        <a href="./quizNinja.html" target=”_blank”>Quiz Ninja Excercise</a><br><br>
+
+        <h2>Chapter 4: Functions</h2>
+        <p>Functions help reduce repetition and make code easier to follow.
+            To define a function literal we can use a function declaration:
+        </p>
+        <code>
+            function hello() {<br>
+                console.log('Hello World!');<br>
+            }
+        </code>
+        <p>
+            Don’t Repeat Yourself, or DRY, is a principle of programming that specifies that every part of a program should only be written once. This 
+            avoids duplication and means there’s no need to keep multiple pieces of code up to date and in sync.
+        </p><br>
+
+        <h2>Week 2 Team Activity</h2>
+        Click <a href="https://byui.instructure.com/courses/160554/quizzes/2612987?module_item_id=20163156" target=”_blank”>here</a> for instructions of week 2 team activity.
+        Click <a href="./week2_ta.html">here</a> to go to Week 2 Team Assignment Solution.<br><br>
+
+
+        <h2>Questions</h2>
+        <ul>
+            <li>What is ES6?</li>
+            <li>What happens if we use ^ to notate exponents?</li>
+            <li>With the pros and cons of soft and hard equality, why hasn’t JavaScript tried to fix it?</li>
+            <li>Is there any down side to Garbage Collection for memory management?</li>
+            <li>When declaring or calling functions, does the position or order matter?</li>
+        </ul>
+    </main>
+
+    <footer class="week2-footer">
+        Click <a href="../index.html">here</a> to go back to Weekly Content.
+    </footer>
+</body>
+</html>
