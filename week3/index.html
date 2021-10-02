@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 330 - Week 3 Notes">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Week 3 Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 3</h1>
+    </header>  
+
+    <main>
+        <h2>Object Methods: This</h2>
+        <p>Actions are represented in JavaScript by functions in properties. A function that is a property of an object is called its method. 
+            When we write our code using objects to represent entities, that’s called object-oriented programming, in short: “OOP”. To access 
+            the object, a method can use the this keyword. The value of this is the object “before dot”, the one used to call the method. In 
+            JavaScript, keyword this behaves unlike most other programming languages. It can be used in any function, even if it’s not a 
+            method of an object.
+        </p><br>
+
+        <h2>Chapter 5: Objects</h2>
+        <p>Everything in JavaScript is either one of the six primitive data types: strings, numbers, booleans, symbols, undefined, and null 
+            or an object. An object in JavaScript is a self-contained set of related values and functions. One way to think about an object 
+            is that it’s like a dictionary where you look up a property name and see a value. It's like a database of values (in fact, some 
+            databases use JavaScript objects to store information). Properties and methods can be changed or removed, and new properties 
+            and methods can be added to the object, even if it was declared using const. Objects are assigned by reference. This means that 
+            if a variable is assigned to an object that already exists, it will simply point to the exact same space in memory. So any 
+            changes made using either reference will affect the same object. Namespacing is good because it avoids clashes with other functions. 
+        </p>
+        <a href="./quizNinja.html" target=”_blank”>Quiz Ninja Excercise</a><br><br>
+
+        <h2>Chapter 6: The Document Object Model</h2>
+        <p>The Document Object Model is a way of representing a page of HTML as a tree of nodes. The document.getElementById(), 
+            document.getElementsByClassName(), document.getElementsByTagNames() and document.querySelector() can be used to 
+            access elements on a page. The parentNode(), previousSibling(), nextSibling(), childNodes() and children() methods 
+            can be used to navigate around the DOM tree. An element’s attributes can be accessed using the getAttribute() method, 
+            and updated using the setAttribute() method. The createElement() and createTextNode() methods can be used to create 
+            dynamic markup on the fly. Markup can be added to the page using the appendChild() and insertBefore() methods. 
+            Elements can be replaced using the replaceChild() method, and removed using the removeChild() method. The innerHTMLproperty 
+            can be used to insert raw HTML directly into the DOM. The CSS properties of an element can be changed by accessing the styleproperty.
+        </p><br>
+
+        <h2>Chapter 7: Events</h2>
+        <p>DOM is an interface that allows you to use JavaScript to interact with a web page. Events are another part of the DOM and they are what 
+            provides the link between the web page and user interactions. Every time a user interacts with a web page, such as clicking on a link, 
+            pressing a key, or moving a mouse, an event occurs that our program can detect and then respond to. Event listeners are like setting a 
+            notification to alert you when something happens. Instead of the program having to constantly check to see if an event has occurred, 
+            the event listener will let it know when the event happens, and the program can then respond appropriately. This allows the program 
+            to continue with other tasks while it waits for the event to happen. Whenever an event handler is triggered by an event, the callback 
+            function is called. This function is automatically passed an event object as a parameter that contains information about the event.
+        </p>
+        Click <a href="./events.html" target=”_blank”>here</a> for the events.html test.<br><br>
+
+        <h2>Week 3 Team Activity</h2>
+        Click <a href="./week3_ta.html">here</a> to go to Week 3 Team Assignment Solution.<br><br>
+
+
+        <h2>Questions</h2>
+        <ul>
+            <li>I’m still unclear of how “this” value depends on the context at runtime.</li>
+            <li>How complex can a nested object get?</li>
+            <li>Is JSON the only data storage that’s compatible with JavaScript? If no, is JSON just the preferred?</li>
+            <li>Are there any pros of using DOM over regular HTML and CSS?</li>
+            <li>What other cases or examples of stopping default behavior are there (aside broken links)?</li>
+        </ul>
+    </main>
+
+    <footer class="week3-footer">
+        Click <a href="../index.html">here</a> to go back to Weekly Content.
+    </footer>
+</body>
+</html>
