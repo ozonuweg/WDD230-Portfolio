@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 330 - Week 4 Notes">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Week 4 Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 4</h1>
+    </header>  
+
+    <main>
+        <h2>Chapter 8: Forms</h2>
+        <p>Forms are a very common method of interacting with a web page. When a form was submitted, it would be sent to a server where the 
+            information would be processed using a 'back end' language such as PHP or Ruby. It’s possible, and becoming more and more common, 
+            to process the information in a form on the 'front end' before it is sent to the server using JavaScript. A useful technique that 
+            can aid usability is to disable the submit button if there are errors on the form. If the submit button is disabled then no action 
+            is taken when it’s clicked. Most browsers will also display it in a lighter color to indicate that it cannot be clicked on. This 
+            prevents users from submitting a form containing any errors.
+        </p>
+        <a href="./quizNinja.html" target=”_blank”>Quiz Ninja Excercise</a><br><br>
+
+        <h2>Chapter 12: Object Oriented Programming</h2>
+        <p>Object-oriented programming (OOP) is a style of programming that involves separating the code into objects that have properties and methods. 
+            The objects can also be reused or easily modified, as required. In JS, Private properties and methods can be created by defining variables 
+            using const and defining a function inside a constructor function. These can be made public using getter and setter functions. Monkey-patching 
+            is the process of adding methods to built-in objects by augmenting their prototypes. This should be done with caution as it can cause unexpected 
+            behavior in the way built-in objects work.
+        </p><br>
+
+        <h2>Chapter 15: Modern JavaScript</h2>
+        <p>JavaScript libraries provide methods to make common tasks easier to achieve. jQuery and Lodash are two popular libraries that provide a large 
+            number of useful and well-tested functions. Before code is deployed, it should be concatenated into a single file, minified and compressed. 
+            The script tag should be placed just before the closing </body> tag to ensure that all elements on the page have loaded before the script runs.
+        </p><br>
+
+
+        <h2>Week 4 Team Activity</h2>
+        Click <a href="./week4_ta.html">here</a> to go to Week 4 Team Assignment Solution.<br><br>
+
+
+        <h2>Questions</h2>
+        <ul>
+            <li>Does ‘placeholder’ have a max length? Basically will the width/height of an input box wrap/expand to how long a placeholder is?</li>
+            <li>For the reading under Form Validation, it says it is very easy to bypass the front-end completely and send arbitrary data to the application's 
+                backend. I might be the one not understanding this perfectly, but how can one bypass, let’s say, an input requiring an email?</li>
+            <li>Is it correct to say that OOP is basically the good use of functions and classes?</li>
+        </ul>
+    </main>
+
+    <footer class="week4-footer">
+        Click <a href="../index.html">here</a> to go back to Weekly Content.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Week 4 Team Activity</title>
+
+    <style>
+        /* .board-cont {
+            margin: auto;
+            width: 30%;
+            margin-top: 10%;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table td {
+            padding: 80px;
+            border: 1px solid rgb(113, 113, 113);
+        }
+        
+        table tr:nth-child(1) td:nth-child(1) {
+            border-top: none;
+            border-left: none;
+        }
+        
+        table tr:nth-child(1) td:nth-child(2) {
+            border-top: none;
+        }
+        
+        table tr:nth-child(1) td:nth-child(3) {
+            border-top: none;
+            border-right: none;
+        }
+        
+        table tr:nth-child(2) td:nth-child(1) {
+            border-left: none;
+        }
+        
+        table tr:nth-child(2) td:nth-child(3) {
+            border-right: none;
+        }
+        
+        table tr:nth-child(3) td:nth-child(1) {
+            border-bottom: none;
+            border-left: none;
+        }
+        
+        table tr:nth-child(3) td:nth-child(2) {
+            border-bottom: none;
+        }
+        
+        table tr:nth-child(3) td:nth-child(3) {
+            border-bottom: none;
+            border-right: none;
+        }
+        
+        h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: darkgreen;
+        }
+        
+        button {
+            padding: 15px 30px;
+            background-color: cornflowerblue;
+            border: none;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            margin: 10px;
+            text-transform: uppercase;
+        }
+        
+        button:active {
+            opacity: .7;
+        } */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 400px;
+            width: 400px;
+        }
+        
+        .cell {
+            border: 1px solid black;
+        }
+        
+        div:nth-child(1) {
+            border-top: none;
+            border-left: none;
+        }
+        
+        div:nth-child(2) {
+            border-top: none;
+        }
+        
+        div:nth-child(3) {
+            border-top: none;
+            border-right: none;
+        }
+        
+        div:nth-child(4) {
+            border-left: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Week 4 Team Assignment</h1>
+    </header>
+    <main>
+        <div class="grid">
+            <div class="cell" id="cell0" ontouchend="play(this)"></div>
+            <div class="cell" id="cell1" ontouchend="play(this)"></div>
+            <div class="cell" id="cell2" ontouchend="play(this)"></div>
+            <div class="cell" id="cell3" ontouchend="play(this)"></div>
+            <div class="cell" id="cell4" ontouchend="play(this)"></div>
+            <div class="cell" id="cell5" ontouchend="play(this)"></div>
+            <div class="cell" id="cell6" ontouchend="play(this)"></div>
+            <div class="cell" id="cell7" ontouchend="play(this)"></div>
+            <div class="cell" id="cell8" ontouchend="play(this)"></div>
+            <button id="reset" onclick="reset()">Reset</button>
+            <div id="output"></div>
+        </div>
+    </main>
+    <footer class="week4-footer">
+        Click <a href="./index.html">here</a> to go back to Week 4 Notes.
+    </footer>
+
+    <script>
+        const player1 = "X";
+        const player2 = "O";
+        let player = player1;
+
+        function play(id) {
+            document.getElementById('output').innerHTML = "";
+            if (!id.innerHTML) {
+                id.innerHTML = player;
+                changePlayer();
+            }
+            /*if (document.getElementById('cell0').innerHTML == "X" && document.getElementById('cell1').innerHTML == "X" && document.getElementById('cell1').innerHTML == "X") {
+                alert("You win!");
+            }*/
+            let win = 0;
+            if ((document.getElementById('cell0').innerHTML == document.getElementById('cell1').innerHTML && document.getElementById('cell0').innerHTML == document.getElementById('cell2').innerHTML) && (document.getElementById('cell0').innerHTML)) {
+                if (document.getElementById('cell0').innerHTML == "X") {
+                    document.getElementById('output').innerHTML = "Player #1 Win!!";
+                } else {
+                    document.getElementById('output').innerHTML = "Player #2 Win!!";
+                }
+                win = 1;
+                reset()
+            } else if ((document.getElementById('cell3').innerHTML == document.getElementById('cell4').innerHTML && document.getElementById('cell3').innerHTML == document.getElementById('cell5').innerHTML) && (document.getElementById('cell3').innerHTML)) {
+                if (document.getElementById('cell3').innerHTML == "X") {
+                    document.getElementById('output').innerHTML = "Player #1 Win!!";
+                } else {
+                    document.getElementById('output').innerHTML = "Player #2 Win!!";
+                }
+
+                win = 1;
+                reset()
+            }
+            if (document.getElementById('cell0').innerHTML && document.getElementById('cell1').innerHTML && document.getElementById('cell2').innerHTML && document.getElementById('cell3').innerHTML && document.getElementById('cell4').innerHTML && document.getElementById('cell5').innerHTML && document.getElementById('cell6').innerHTML && document.getElementById('cell7').innerHTML && document.getElementById('cell8').innerHTML && (win == 0)) {
+                document.getElementById('output').innerHTML = "It's a DRAW";
+                //reset()
+            }
+        }
+
+        document.getElementById('board').addEventListener('ontouchend');
+
+        function changePlayer() {
+            if (player == player1) {
+                player = player2;
+            } else {
+                player = player1;
+            }
+        }
+
+        function reset() {
+            document.querySelectorAll(".cell").forEach((cell) => (cell.textContent = ""));
+            //document.getElementById('output').innerHTML = "";
+        }
+    </script>
+</body>
+</html>
