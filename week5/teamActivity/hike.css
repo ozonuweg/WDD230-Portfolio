@@ -12,6 +12,7 @@ img {
 div.container {
     display: grid;
     grid-template-columns: auto auto;
+    grid-column-gap: 10px;
 }
 
 ul {
