@@ -28,7 +28,7 @@ const hikeList = [
   )
 ];
 
-const imgBasePath = "byui-cit.github.io/cit261/examples/";
+const imgBasePath = "//byui-cit.github.io/cit261/examples/";
 
 //on load grab the array and insert it into the page
 window.addEventListener("load", () => {
@@ -57,6 +57,7 @@ function renderOneHike(hike) {
   });
 
   item.innerHTML = ` <h2>${hike.name}</h2>
+        <div class="container">
           <div class="image">
             <img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}">
           </div>
@@ -70,7 +71,8 @@ function renderOneHike(hike) {
               <h3>Difficulty</h3>
               <p>${hike.difficulty}</p>
             </div>
-          </div>`;
+          </div>
+        </div>`;
 
   return item;
 }
