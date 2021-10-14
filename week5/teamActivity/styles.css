@@ -5,6 +5,10 @@ body {
       Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+main {
+    background-color: white;
+}
+
 img {
     max-width: 100%;
 }

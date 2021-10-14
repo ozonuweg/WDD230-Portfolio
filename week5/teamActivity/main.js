@@ -1,4 +1,4 @@
-import { Hike } from './hikes.js'
+import { Hike } from './hikes.js';
 
 //create an array of hikes
 const hikeList = [
