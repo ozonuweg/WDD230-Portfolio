@@ -65,10 +65,11 @@
             font-family: Arial, Helvetica, sans-serif;
             color: darkgreen;
         }
+        */
         
         button {
             padding: 15px 30px;
-            background-color: cornflowerblue;
+            background-color: rgb(139, 15, 139);
             border: none;
             color: #fff;
             display: block;
@@ -80,7 +81,7 @@
         
         button:active {
             opacity: .7;
-        } */
+        } 
         
         .grid {
             display: grid;
@@ -120,15 +121,15 @@
     </header>
     <main>
         <div class="grid">
-            <div class="cell" id="cell0" ontouchend="play(this)"></div>
-            <div class="cell" id="cell1" ontouchend="play(this)"></div>
-            <div class="cell" id="cell2" ontouchend="play(this)"></div>
-            <div class="cell" id="cell3" ontouchend="play(this)"></div>
-            <div class="cell" id="cell4" ontouchend="play(this)"></div>
-            <div class="cell" id="cell5" ontouchend="play(this)"></div>
-            <div class="cell" id="cell6" ontouchend="play(this)"></div>
-            <div class="cell" id="cell7" ontouchend="play(this)"></div>
-            <div class="cell" id="cell8" ontouchend="play(this)"></div>
+            <div class="cell" id="cell0" onclick="play(this)"></div>
+            <div class="cell" id="cell1" onclick="play(this)"></div>
+            <div class="cell" id="cell2" onclick="play(this)"></div>
+            <div class="cell" id="cell3" onclick="play(this)"></div>
+            <div class="cell" id="cell4" onclick="play(this)"></div>
+            <div class="cell" id="cell5" onclick="play(this)"></div>
+            <div class="cell" id="cell6" onclick="play(this)"></div>
+            <div class="cell" id="cell7" onclick="play(this)"></div>
+            <div class="cell" id="cell8" onclick="play(this)"></div>
             <button id="reset" onclick="reset()">Reset</button>
             <div id="output"></div>
         </div>
@@ -176,7 +177,7 @@
             }
         }
 
-        document.getElementById('board').addEventListener('ontouchend');
+        // document.getElementById('board').addEventListener('onclick');
 
         function changePlayer() {
             if (player == player1) {

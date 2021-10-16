@@ -22,41 +22,23 @@
     </header>  
 
     <main>
-        <h2>Chapter 8: Forms</h2>
-        <p>Forms are a very common method of interacting with a web page. When a form was submitted, it would be sent to a server where the 
-            information would be processed using a 'back end' language such as PHP or Ruby. It’s possible, and becoming more and more common, 
-            to process the information in a form on the 'front end' before it is sent to the server using JavaScript. A useful technique that 
-            can aid usability is to disable the submit button if there are errors on the form. If the submit button is disabled then no action 
-            is taken when it’s clicked. Most browsers will also display it in a lighter color to indicate that it cannot be clicked on. This 
-            prevents users from submitting a form containing any errors.
-        </p>
-        <a href="./quizNinja.html" target=”_blank”>Quiz Ninja Excercise</a><br><br>
+        <h2>Chapter 10: Testing and Debugging</h2>
+        <p>Errors are caused when something goes wrong in a program. They are usually caused by:<br>
+            * System error ― there’s a problem with the system or external devices with which the program is interacting.<br>
+            * Programmer error ― the program contains incorrect syntax or faulty logic; it could even be as simple as a typo.<br>
+            * User error ― the user has entered data incorrectly, which the program is unable to handle.<br><br>
+            An exception is an error that produces a return value that can then be used by the program to deal with the error. An exception will also produce astack trace. This is a sequence of functions or method calls that lead to the point where the error occurred. A stack trace will work backwards from the point at which the error occurred to identify the original function or method that started the sequence. A warning can occur if there’s an error in the code that isn't enough to cause the program to crash. This means the program will continue to run after a warning.
+            JavaScript failing silently makes errors difficult to spot and longer to track down. Placing'use strict'at the beginning of a file will enforce strict mode on all the JavaScript in the file.</p><br>
 
-        <h2>Chapter 12: Object Oriented Programming</h2>
-        <p>Object-oriented programming (OOP) is a style of programming that involves separating the code into objects that have properties and methods. 
-            The objects can also be reused or easily modified, as required. In JS, Private properties and methods can be created by defining variables 
-            using const and defining a function inside a constructor function. These can be made public using getter and setter functions. Monkey-patching 
-            is the process of adding methods to built-in objects by augmenting their prototypes. This should be done with caution as it can cause unexpected 
-            behavior in the way built-in objects work.
-        </p><br>
-
-        <h2>Chapter 15: Modern JavaScript</h2>
-        <p>JavaScript libraries provide methods to make common tasks easier to achieve. jQuery and Lodash are two popular libraries that provide a large 
-            number of useful and well-tested functions. Before code is deployed, it should be concatenated into a single file, minified and compressed. 
-            The script tag should be placed just before the closing </body> tag to ensure that all elements on the page have loaded before the script runs.
-        </p><br>
-
-
-        <h2>Week 4 Team Activity</h2>
-        Click <a href="./teamActivity/index.html">here</a> to go to Week 5 Team Assignment Solution.<br><br>
+        <h2>Week 5 Team Activity</h2>
+        Click <a href="./teamActivity/index.html" target="_blank">here</a> to go to Week 5 Team Assignment Solution.<br><br>
 
 
         <h2>Questions</h2>
         <ul>
-            <li>Does ‘placeholder’ have a max length? Basically will the width/height of an input box wrap/expand to how long a placeholder is?</li>
-            <li>For the reading under Form Validation, it says it is very easy to bypass the front-end completely and send arbitrary data to the application's 
-                backend. I might be the one not understanding this perfectly, but how can one bypass, let’s say, an input requiring an email?</li>
-            <li>Is it correct to say that OOP is basically the good use of functions and classes?</li>
+            <li>In using HTML and JavaScript, is it possible to actually have errors and still have the program run? For example, I’ve had cases in my code where I’m missing a closing tag, etc, and it does work.</li>
+            <li>Is it recommended to use strict mode in every JavaScript code we write?</li>
+            <li>Do you have a recommended process for debugging?</li>
         </ul>
     </main>
 
