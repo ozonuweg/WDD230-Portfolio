@@ -1,0 +1,141 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(237, 234, 240);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+html {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+#wrapper {
+    width: 450px;
+    background-color: rgb(237, 234, 240);
+    padding: 1em;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#filters input[type="radio"] { 
+    display: none;
+}
+#filters input[type="radio"]:checked ~ span { 
+    background-color: rgb(123, 35, 211);
+} 
+#filters input[type="radio"]:checked ~ span:first-of-type { 
+    color: white;
+}
+#footer { 
+    margin-bottom: 20px; 
+}
+#filters { 
+    float:right; 
+}
+#filters span {
+    background-color: transparent;
+    color: rgb(123, 35, 211);
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid rgb(123, 35, 211);
+}
+#newTask {
+    width: 82%;
+    font-size: 1.6em;
+    height: 42px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 4px;
+}
+#add {
+    width: 11%;
+    height: 50px;
+    margin-left: 5px;
+    font-size: 2em;
+    color: rgb(121, 121, 121);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 4px;
+}
+#add:hover {
+    background-color: black;
+    color: white;
+    cursor: copy;
+}
+#list {
+    min-height: 350px;
+    width: 100%;
+    margin: 0 auto 10px auto;
+}
+.task {
+    display: flex;
+    margin: 0 auto 10px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 5px;
+}
+label.checkbox-container, div.taskname, button.taskremove {
+    display: inline;
+    align-content: center;
+}
+label.checkbox-container {
+    width: 45px;
+    height: 30px;
+}
+div.taskname {
+    font-size: 1.6em;
+    padding: .3em;
+}
+
+button.taskremove {
+    margin-left: auto;
+    margin-right: 2px;
+    text-align: center;
+    width: 32px;
+    height:32px;
+    color: rgb(121, 121, 121);
+}
+button.taskremove:hover {
+    background-color:thistle;
+    border: 1px solid black;
+}
+#task-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] {
+    background-color: #fafafa;
+	border: 1px solid rgb(71, 71, 71);
+    width: 32px;
+    height: 32px;
+	border-radius: 3px;
+    margin-right: 10px;
+    appearance: none;
+}
+input[type="checkbox"]:checked {
+	background-color: rgb(123, 35, 211);
+	border: 1px solid rgb(71, 71, 71);
+	color: #99a1a7;
+}
+input[type="checkbox"]:checked:after {
+    color: white;
+    width: 35px;
+    height: 35px;
+	content: '✔︎';
+	font-size: 18px;
+    position: relative;
+    top: 5px;
+    left: 8px;
+}
