@@ -1,6 +1,6 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    max-width: 600px;
+    max-width: 450px;
     margin: 0 auto;
     background-color: rgb(237, 234, 240);
     padding: 5px;
@@ -16,7 +16,6 @@ h1 {
 }
 
 #wrapper {
-    width: 450px;
     background-color: rgb(237, 234, 240);
     padding: 1em;
     border-radius: 10px;
