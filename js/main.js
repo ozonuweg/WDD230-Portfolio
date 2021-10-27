@@ -23,6 +23,30 @@ const links = [
     {
         label: "Challenge One",
         url: "week6/index.html"
+    },
+    {
+        label: "Week 7 Notes",
+        url: "week7/index.html"
+    },
+    {
+        label: "Week 8 Notes",
+        url: "week8/index.html"
+    },
+    {
+        label: "Week 9 Notes",
+        url: "week9/index.html"
+    },
+    {
+        label: "Week 10 Notes",
+        url: "week10/index.html"
+    },
+    {
+        label: "Week 11 Notes",
+        url: "week11/index.html"
+    },
+    {
+        label: "Challenge Two",
+        url: "week12/index.html"
     }
   ]
  
