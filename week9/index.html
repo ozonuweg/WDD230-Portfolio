@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 330 - Week 9 Notes">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Week 9 Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 9</h1>
+    </header>  
+
+    <main>
+        <h2>Chapter 9: The Window Object</h2>
+        <p>In a browser environment the global object is the window object, which represents the browser window that contains a web page. 
+            Global variables are actual properties of a global object. In a browser environment, the global object is the window object. 
+            This means that any global variable created is actually a property of the window object. In general, you should refer to global 
+            variables without using the window object; it’s less typing and your code will be more portable between environments. An exception 
+            is if you need to check whether a global variable has been defined. Some functions we’ve already met, such as parseInt() and isNaN(), 
+            are actually methods of the global object, which in a browser environment makes them methods of the window object.
+        </p><br>
+
+        <h2>Chapter 14: HTML5 APIs</h2>
+        <p><strong>The Web Storage API (HTML5 Web Storage)</strong> provides a key-value store on the client’s computer that is similar to using 
+            cookies but has fewer restrictions, more storage capacity, and is generally easier to use. This makes it perfect for storing information 
+            about users, as well as storing application-specific information that can then be used during future sessions. Rather than using the 
+            getItem() and setItem() methods, assignment can be used instead.<br>
+            <strong>The Geolocation API</strong> is used to obtain the geographical position of the device. This means it can be used to find the 
+            user’s exact location, then link to nearby places or measure the speed at which the user is moving. This information can then be used 
+            to filter data based on the user's location or speed and direction of travel.<br>
+            <strong>Media API</strong> is used for controlling the playback of the clips using JavaScript. An audio clip can be inserted into a 
+            page with the <audio> tag, using the src attribute to point to the audio file. A video clip can be inserted with the <video> tag, using 
+            the src attribute to point to the movie file. Any content inside the <audio> or <video> tags will only display if the browser does not 
+            support them; hence, it can be used to display a message to users of older browsers without support for these features. The controls 
+            attribute can be added (without any value) and will display the browser’s native controls, such as play, pause, and volume control.
+        </p><br>
+        
+        <h2>Week 9 Team Activity</h2>
+        Click <a href="./teamActivity/index.html" target="_blank">here</a> to go to Week 9 Team Assignment Solution.<br><br>
+
+
+        <h2>Questions</h2>
+        <ul>
+            <li>Is the OK or Cancel options automatically built in the window.confirm() method?</li>
+            <li>If the methods (window.alert(), window.prompt(), window.confirm()) aren’t reliable, what’s a more reliable approach?</li>
+            <li>Why is the use of document.write() frowned upon? If we encourage the use of JavaScript in our websites (for better performance and efficiency), I would assume that this method should be a good addition.</li>
+            <li>How long does a local storage store data for? Basically, I think about it like Cookies. I know with Local Storage you can close out of a browser and reopen to still get access to what was stored. But where does it end? Is it until you remove it?</li>
+            <li>Is it best practice to use assignments with local storage instead of getItem() and setItem()?</li>
+            <li>Isn’t the Geolocation API violating privacy?</li>
+        </ul>
+    </main>
+
+    <footer class="week9-footer">
+        Click <a href="../index.html">here</a> to go back to Weekly Content.
+    </footer>
+</body>
+</html>

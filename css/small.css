@@ -80,3 +80,7 @@ ul#weeks {
 h2.header {
     text-align: center;
 }
+strong {
+    color: rgb(151, 14, 14);
+    font-weight: bolder;
+}
