@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Formula</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <nav class="sticky navbar">
+            <div class="brand  display__logo">
+                <a href="#top" class="nav__link"> <span class="logo">Bubu's Nigerian Food Formula</span></a>
+            </div>
+        
+            <input type="checkbox" id="nav" class="hidden" />
+            <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
+            <div class="nav">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="recipe.html" class="nav__link">Recipes</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <h2>Common Nigerian Meal Recipes</h2><br>
+            <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."><br><br> -->
+            <input type="text" id="myInput" class="input" list="searchdata" placeholder="Search for names..">
+            <button title="Click to search" type="submit" class="searchBtn fa fa-search" onclick="myFunction()"></i></button>
+            <datalist id="searchdata"></datalist><br><br>
+            <h3>Filters</h3>
+            <button type="submit" class="i" onclick="allRecipe()">ALL RECIPES</button>
+            <button type="submit" class="i" onclick="filterBreakfast()">BREAKFAST</button>
+            <button type="submit" class="i" onclick="filterlnd()">LUNCH & DINNER</button>
+            <button type="submit" class="i" onclick="filterSnack()">SNACK</button><br><br>
+            <div id="recipes"></div>
+        </main><br><br>
+
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <div class="social-wrapper">
+                    <p>Check us on Social Media</p><br>
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+                    </li>
+                  </ul>
+                </div><br>
+              
+                <nav class="footer-nav" role="navigation">
+                  <p>Copyright &copy; 2021- Glory Ozonuwe. All rights reserved.</p>
+                </nav>
+              </footer>
+        <script src="js/recipe.js"></script>
+    </body>
+</html>

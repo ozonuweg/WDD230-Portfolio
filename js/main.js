@@ -46,7 +46,7 @@ const links = [
     },
     {
         label: "Challenge Two",
-        url: "week12/index.html"
+        url: "project/index.html"
     }
   ]
  
